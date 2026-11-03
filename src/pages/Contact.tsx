@@ -159,7 +159,7 @@ function ContactForm() {
     const e: Errors = {};
     if (form.nama.trim().length < 3) e.nama = "Nama minimal 3 karakter.";
     if (!/^[0-9+\-\s()]{9,17}$/.test(form.wa.trim())) e.wa = "Nomor WhatsApp tidak valid (min. 9 digit).";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) e.email = "Format email tidak valid.";
+    if (form.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) e.email = "Format email tidak valid.";
     if (!form.layanan) e.layanan = "Pilih jenis layanan.";
     if (!form.merek) e.merek = "Pilih merek AC.";
     const unit = parseInt(form.unit, 10);
@@ -239,8 +239,8 @@ function ContactForm() {
           <FieldError k="wa" />
         </div>
         <div className="sm:col-span-2">
-          <label htmlFor="email" className="block text-sm font-semibold text-navy mb-1.5">Email <span className="text-coral">*</span></label>
-          <input id="email" type="email" value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="cth: budi@email.com" className={inputCls(errors.email)} />
+          <label htmlFor="email" className="block text-sm font-semibold text-navy mb-1.5">Email <span className="text-slate-400 font-normal">(opsional)</span></label>
+          <input id="email" type="email" value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="cth: budi@email.com — untuk kirim invoice" className={inputCls(errors.email)} />
           <FieldError k="email" />
         </div>
         <div>
@@ -284,9 +284,13 @@ function ContactForm() {
 
       <button type="submit" className="btn mt-7 w-full inline-flex items-center justify-center gap-2.5 rounded-full bg-coral-gradient text-white font-display font-semibold px-8 py-4.5 text-lg shadow-glow-coral hover:brightness-110 hover:-translate-y-0.5">
         <Send size={19} />
-        Siapkan Pesan &amp; Dapatkan Konsultasi Gratis
+        Lanjut ke WhatsApp &amp; Konsultasi Gratis
       </button>
-      <p className="mt-4 text-center text-xs text-slate-400">Data Anda aman &amp; hanya digunakan untuk keperluan layanan.</p>
+      <p className="mt-4 text-center text-xs text-slate-400 leading-relaxed">
+        <span className="font-semibold text-navy/60">Garansi 30 hari • Harga disepakati di awal • Tanpa biaya tersembunyi.</span>
+        <br />
+        Data Anda aman &amp; hanya digunakan untuk keperluan layanan.
+      </p>
     </form>
   );
 }
@@ -428,7 +432,7 @@ function FinalCTA() {
 export default function Contact() {
   useMeta(
     "Hubungi Kami — CoolMaster™ | Konsultasi Gratis & Respon Cepat",
-    "Hubungi CoolMaster™ untuk konsultasi gratis jasa servis AC & HVAC. Melayani Jabodetabek, respon cepat via WhatsApp, telepon & email."
+    "Hubungi CoolMaster™ untuk konsultasi gratis servis AC & HVAC. Respon cepat via WhatsApp, telepon & email. Melayani Jabodetabek setiap hari. Pesan teknisi sekarang!"
   );
   return (
     <>

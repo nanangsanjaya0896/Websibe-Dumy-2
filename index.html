@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoolMaster™ — Jasa Servis AC & HVAC Profesional #1 Jabodetabek</title>
-    <meta name="description" content="CoolMaster™ — Layanan HVAC & Servis AC terpercaya sejak 2005. Perbaikan, cuci AC, instalasi & perawatan berkala. Garansi dingin 100%, hemat listrik hingga 40%, teknisi bersertifikat tiba dalam 45 menit. Melayani Jabodetabek." />
+    <title>Jasa Servis AC & HVAC Profesional #1 Jabodetabek — CoolMaster™</title>
+    <meta name="description" content="Perbaikan, cuci, instalasi & perawatan AC profesional. Garansi dingin 100%, hemat listrik 40%, teknisi bersertifikat tiba dalam 45 menit. Pesan teknisi sekarang!" />
     <meta name="keywords" content="servis ac, cuci ac, jasa hvac, perbaikan ac, instalasi ac, isi freon, maintenance ac, servis ac jakarta, servis ac jabodetabek, coolmaster" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.coolmaster.co.id/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="CoolMaster™ — Jasa Servis AC & HVAC Profesional #1 Jabodetabek" />
-    <meta property="og:description" content="Solusi cepat perbaikan, perawatan, dan instalasi AC profesional. Garansi dingin 100%, teknisi bersertifikat tiba dalam 45 menit." />
+    <meta property="og:title" content="Jasa Servis AC & HVAC Profesional #1 Jabodetabek — CoolMaster™" />
+    <meta property="og:description" content="Perbaikan, cuci, instalasi & perawatan AC profesional. Garansi dingin 100%, teknisi bersertifikat tiba dalam 45 menit. Pesan teknisi sekarang!" />
     <meta property="og:image" content="https://images.pexels.com/photos/5463580/pexels-photo-5463580.jpeg?auto=compress&cs=tinysrgb&w=1200" />
     <meta property="og:url" content="https://www.coolmaster.co.id/" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -21,42 +21,112 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HVACBusiness",
-        "name": "CoolMaster™",
-        "description": "Layanan HVAC & Servis AC terpercaya sejak 2005. Perbaikan, cuci AC, instalasi & perawatan berkala untuk residensial, perkantoran, dan industrial di Jabodetabek.",
-        "url": "https://www.coolmaster.co.id/",
-        "telephone": "+62-21-555-0123",
-        "email": "info@coolmaster.co.id",
-        "image": "https://images.pexels.com/photos/5463580/pexels-photo-5463580.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        "priceRange": "Rp 85.000 - Rp 450.000",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Jl. Kebon Jeruk Raya No. 123",
-          "addressLocality": "Jakarta Barat",
-          "postalCode": "11530",
-          "addressRegion": "DKI Jakarta",
-          "addressCountry": "ID"
-        },
-        "openingHoursSpecification": [
+        "@graph": [
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            "opens": "07:00",
-            "closes": "21:00"
+            "@type": "HVACBusiness",
+            "@id": "https://www.coolmaster.co.id/#business",
+            "name": "CoolMaster™",
+            "description": "Layanan HVAC & Servis AC terpercaya sejak 2005. Perbaikan, cuci AC, instalasi & perawatan berkala untuk residensial, perkantoran, dan industrial di Jabodetabek.",
+            "url": "https://www.coolmaster.co.id/",
+            "logo": "https://images.pexels.com/photos/5463580/pexels-photo-5463580.jpeg?auto=compress&cs=tinysrgb&w=1200",
+            "image": "https://images.pexels.com/photos/5463580/pexels-photo-5463580.jpeg?auto=compress&cs=tinysrgb&w=1200",
+            "telephone": "+62-21-555-0123",
+            "email": "info@coolmaster.co.id",
+            "priceRange": "Rp 85.000 - Rp 450.000",
+            "currenciesAccepted": "IDR",
+            "paymentAccepted": "Tunai, Transfer Bank, QRIS",
+            "foundingDate": "2005",
+            "slogan": "Udara sejuk, sehat, dan hemat energi untuk keluarga dan bisnis Indonesia.",
+            "sameAs": [
+              "https://www.instagram.com/coolmaster.id",
+              "https://www.facebook.com/coolmaster.id",
+              "https://www.youtube.com/@coolmasterid",
+              "https://www.tiktok.com/@coolmasterid",
+              "https://www.linkedin.com/company/coolmaster-indonesia"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+62-21-555-0123",
+              "contactType": "customer service",
+              "areaServed": "ID",
+              "availableLanguage": ["id", "en"]
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Jl. Kebon Jeruk Raya No. 123",
+              "addressLocality": "Jakarta Barat",
+              "postalCode": "11530",
+              "addressRegion": "DKI Jakarta",
+              "addressCountry": "ID"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": -6.1888,
+              "longitude": 106.7694
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "07:00",
+                "closes": "21:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "08:00",
+                "closes": "18:00"
+              }
+            ],
+            "areaServed": [
+              { "@type": "City", "name": "Jakarta" },
+              { "@type": "City", "name": "Bogor" },
+              { "@type": "City", "name": "Depok" },
+              { "@type": "City", "name": "Tangerang" },
+              { "@type": "City", "name": "Bekasi" }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Paket Layanan Servis AC CoolMaster™",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "name": "Basic — Cuci AC Standard",
+                  "price": "85000",
+                  "priceCurrency": "IDR",
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Premium — Cuci AC Deep Clean",
+                  "price": "175000",
+                  "priceCurrency": "IDR",
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Total Care — Annual Maintenance",
+                  "price": "450000",
+                  "priceCurrency": "IDR",
+                  "availability": "https://schema.org/InStock"
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "2500"
+            }
           },
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Sunday",
-            "opens": "08:00",
-            "closes": "18:00"
+            "@type": "WebSite",
+            "@id": "https://www.coolmaster.co.id/#website",
+            "url": "https://www.coolmaster.co.id/",
+            "name": "CoolMaster™",
+            "inLanguage": "id",
+            "publisher": { "@id": "https://www.coolmaster.co.id/#business" }
           }
-        ],
-        "areaServed": ["Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi"],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "2500"
-        }
+        ]
       }
     </script>
   </head>

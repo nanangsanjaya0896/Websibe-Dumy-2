@@ -70,7 +70,7 @@ export default function Navbar() {
               to="/contact"
               className="btn inline-flex items-center gap-2 rounded-full bg-coral-gradient text-white font-display font-semibold px-6 py-3 text-sm shadow-glow-coral hover:brightness-110 hover:-translate-y-0.5"
             >
-              Hubungi Kami
+              Pesan Teknisi
             </Link>
           </div>
 
@@ -121,7 +121,7 @@ export default function Navbar() {
                 to="/contact"
                 className="btn inline-flex items-center justify-center gap-2 rounded-full bg-coral-gradient text-white font-display font-semibold px-6 py-4 shadow-glow-coral"
               >
-                Hubungi Kami
+                Pesan Teknisi
               </Link>
               <a href={`tel:+62${PHONE_MOBILE.replace(/\D/g, "").slice(1)}`} className="inline-flex items-center justify-center gap-2 text-white/75 text-sm font-semibold">
                 <Phone size={15} className="text-brand-light" /> Hotline: {PHONE_MOBILE}

@@ -249,8 +249,8 @@ function Process() {
 /* ------------------------------- Page -------------------------------- */
 export default function Services() {
   useMeta(
-    "Layanan HVAC Profesional — Repair, Cuci AC, Instalasi & Maintenance | CoolMaster™",
-    "Layanan HVAC lengkap: AC repair & troubleshooting, cuci AC deep cleaning, instalasi & relokasi, annual maintenance plan. Response time 45 menit, garansi 30 hari."
+    "Servis AC & HVAC: Repair, Cuci, Instalasi — CoolMaster™",
+    "Layanan HVAC lengkap: AC repair & troubleshooting, cuci AC deep cleaning, instalasi & relokasi, maintenance berkala. Teknisi bersertifikat, garansi 30 hari. Pesan sekarang!"
   );
   return (
     <>

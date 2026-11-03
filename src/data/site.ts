@@ -248,6 +248,7 @@ export type PricingPlan = {
   originalPrice?: string;
   unit: string;
   desc: string;
+  bestFor: string;
   features: string[];
   badge?: string;
   ribbon?: string;
@@ -262,6 +263,7 @@ export const PLANS: PricingPlan[] = [
     price: "Rp 85.000",
     unit: "/ unit",
     desc: "Perawatan rutin ringan untuk menjaga AC tetap bersih & dingin.",
+    bestFor: "Rumah dengan 1–2 unit AC untuk perawatan rutin.",
     features: ["Cuci filter & body unit", "Cek tekanan freon dasar", "Pembersihan cover & casing", "Cek arus listrik & remote", "Garansi pengerjaan 7 hari"],
   },
   {
@@ -272,6 +274,7 @@ export const PLANS: PricingPlan[] = [
     originalPrice: "Rp 250.000",
     unit: "/ unit",
     desc: "Pembersihan menyeluruh dengan steam tekanan tinggi + inspeksi total.",
+    bestFor: "Keluarga & kantor kecil yang ingin hasil maksimal.",
     features: [
       "Steam high pressure evaporator & blower",
       "Anti-bakteri & anti-jamur treatment",
@@ -291,6 +294,7 @@ export const PLANS: PricingPlan[] = [
     price: "Rp 450.000",
     unit: "/ unit / tahun",
     desc: "Ketenangan sepanjang tahun — AC Anda kami rawat seperti milik sendiri.",
+    bestFor: "Bisnis & rumah besar yang tidak mau repot soal jadwal.",
     features: [
       "4x kunjungan perawatan / tahun",
       "Prioritas jadwal & antrian",

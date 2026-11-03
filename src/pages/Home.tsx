@@ -374,8 +374,8 @@ function TestimonialPreview() {
 /* =============================== PAGE ================================ */
 export default function Home() {
   useMeta(
-    "CoolMaster™ — Jasa Servis AC & HVAC Profesional #1 Jabodetabek",
-    "Solusi cepat perbaikan, perawatan, dan instalasi AC profesional. Garansi dingin 100%, hemat listrik 40%, teknisi bersertifikat tiba dalam 45 menit."
+    "Jasa Servis AC & HVAC Profesional #1 Jabodetabek — CoolMaster™",
+    "Perbaikan, cuci, instalasi & perawatan AC profesional. Garansi dingin 100%, hemat listrik 40%, teknisi bersertifikat tiba dalam 45 menit. Pesan teknisi sekarang!"
   );
   return (
     <>

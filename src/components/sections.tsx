@@ -35,7 +35,7 @@ export function PartnerMarquee({ dark = false }: { dark?: boolean }) {
 export function CTABanner({
   title = "Siap Menikmati Ruangan Sejuk Hari Ini?",
   subtitle = "Dapatkan konsultasi gratis dan promo spesial bulan ini — teknisi tiba dalam 45 menit.",
-  primaryLabel = "Hubungi Kami Sekarang",
+  primaryLabel = "Jadwalkan Teknisi Sekarang",
   primaryTo = "/contact",
   secondaryLabel = "Lihat Promo",
   secondaryTo = "/promo",

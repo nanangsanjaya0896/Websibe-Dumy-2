@@ -1,4 +1,4 @@
-import { type ReactNode } from "react";
+import { type ReactNode, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, Home } from "lucide-react";
 
@@ -14,6 +14,25 @@ export default function PageHero({
   crumb: string;
   children?: ReactNode;
 }) {
+  // BreadcrumbList JSON-LD per halaman (rich results breadcrumb)
+  useEffect(() => {
+    let el = document.getElementById("jsonld-breadcrumb") as HTMLScriptElement | null;
+    if (!el) {
+      el = document.createElement("script");
+      el.type = "application/ld+json";
+      el.id = "jsonld-breadcrumb";
+      document.head.appendChild(el);
+    }
+    el.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.coolmaster.co.id/" },
+        { "@type": "ListItem", position: 2, name: crumb },
+      ],
+    });
+  }, [crumb]);
+
   return (
     <section className="relative hero-mesh overflow-hidden">
       <div className="absolute inset-0 dot-grid" aria-hidden="true" />

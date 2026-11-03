@@ -138,6 +138,10 @@ function Pricing() {
                 <h3 className="mt-5 font-display font-bold text-navy text-2xl">{p.name}</h3>
                 <p className="text-brand-dark text-sm font-semibold">{p.tag}</p>
                 <p className="mt-3 text-sm text-slate-500 leading-relaxed">{p.desc}</p>
+                <p className="mt-2.5 inline-flex items-start gap-1.5 text-xs text-navy/70 bg-mist border border-slate-200 rounded-full px-3 py-1.5">
+                  <Check size={12} strokeWidth={3} className="text-brand shrink-0 mt-0.5" />
+                  <span><span className="font-semibold">Cocok untuk:</span> {p.bestFor}</span>
+                </p>
                 <div className="mt-6 flex items-end gap-2">
                   {p.originalPrice && <span className="text-slate-400 line-through text-lg mb-1.5">{p.originalPrice}</span>}
                   <span className={`font-display font-bold text-[2.1rem] leading-none ${p.highlight ? "text-gradient" : "text-navy"}`}>{p.price}</span>
