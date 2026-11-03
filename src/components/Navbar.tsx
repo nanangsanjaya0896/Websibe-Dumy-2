@@ -62,7 +62,7 @@ export default function Navbar() {
                 <Phone size={15} />
               </span>
               <span className="leading-tight text-left">
-                <span className={`block text-[10px] uppercase tracking-wider ${dark ? "text-white/50" : "text-slate-400"}`}>24/7 Hotline</span>
+                <span className={`block text-[10px] uppercase tracking-wider ${dark ? "text-white/50" : "text-slate-400"}`}>Hotline</span>
                 {PHONE_MOBILE}
               </span>
             </a>
@@ -124,7 +124,7 @@ export default function Navbar() {
                 Hubungi Kami
               </Link>
               <a href={`tel:+62${PHONE_MOBILE.replace(/\D/g, "").slice(1)}`} className="inline-flex items-center justify-center gap-2 text-white/75 text-sm font-semibold">
-                <Phone size={15} className="text-brand-light" /> Hotline 24/7: {PHONE_MOBILE}
+                <Phone size={15} className="text-brand-light" /> Hotline: {PHONE_MOBILE}
               </a>
             </div>
           </div>

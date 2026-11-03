@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import Logo from "./Logo";
 import { FacebookIcon, InstagramIcon, TikTokIcon, YoutubeIcon } from "./SocialIcons";
-import { ADDRESS, EMAIL, HOURS, NAV_LINKS, PHONE_DISPLAY, PHONE_MOBILE, WA_DEFAULT } from "../data/site";
+import { ADDRESS, EMAIL, HOURS, NAV_LINKS, PHONE_DISPLAY, PHONE_MOBILE, SOCIAL_LINKS, WA_DEFAULT } from "../data/site";
 
 const serviceLinks = [
   { label: "Servis AC & Perbaikan", path: "/services" },
@@ -12,10 +12,10 @@ const serviceLinks = [
 ];
 
 const socials = [
-  { icon: InstagramIcon, label: "Instagram CoolMaster" },
-  { icon: FacebookIcon, label: "Facebook CoolMaster" },
-  { icon: YoutubeIcon, label: "YouTube CoolMaster" },
-  { icon: TikTokIcon, label: "TikTok CoolMaster" },
+  { icon: InstagramIcon, label: "Instagram CoolMaster", href: SOCIAL_LINKS.instagram },
+  { icon: FacebookIcon, label: "Facebook CoolMaster", href: SOCIAL_LINKS.facebook },
+  { icon: YoutubeIcon, label: "YouTube CoolMaster", href: SOCIAL_LINKS.youtube },
+  { icon: TikTokIcon, label: "TikTok CoolMaster", href: SOCIAL_LINKS.tiktok },
 ];
 
 export default function Footer() {
@@ -41,7 +41,9 @@ export default function Footer() {
               {socials.map((s) => (
                 <a
                   key={s.label}
-                  href="#"
+                  href={s.href}
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label={s.label}
                   className="grid place-items-center w-10 h-10 rounded-full bg-white/10 border border-white/10 text-white/80 hover:bg-brand hover:text-white hover:-translate-y-1 transition-all duration-300"
                 >
@@ -135,7 +137,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/50">
           <p>
-            Copyright © 2025 <span className="text-white/80 font-semibold">CoolMaster™</span>. All Rights Reserved.
+            Copyright © {new Date().getFullYear()} <span className="text-white/80 font-semibold">CoolMaster™</span>. All Rights Reserved.
           </p>
           <p className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />

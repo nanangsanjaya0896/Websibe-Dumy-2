@@ -23,7 +23,7 @@ export default function Logo({ light = false }: { light?: boolean }) {
         </svg>
         <span className="absolute -right-0.5 -top-0.5 w-2.5 h-2.5 rounded-full bg-coral ring-2 ring-white/90" />
       </span>
-      <span className={`font-display font-800 text-xl tracking-tight leading-none ${light ? "text-white" : "text-navy"}`} style={{ fontWeight: 800 }}>
+      <span className={`font-display text-xl tracking-tight leading-none ${light ? "text-white" : "text-navy"}`} style={{ fontWeight: 800 }}>
         CoolMaster<span className="text-brand">™</span>
         <span className={`block text-[10px] font-body font-semibold tracking-[0.22em] uppercase mt-0.5 ${light ? "text-white/60" : "text-navy/50"}`}>
           HVAC & Servis AC

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ArrowDown, ArrowUp, Building2, CalendarDays, CirclePlay, Play, Quote, Target, TrendingDown, Wrench, X } from "lucide-react";
 import PageHero from "../components/PageHero";
 import { CTABanner, TestimonialCard } from "../components/sections";
@@ -195,6 +195,20 @@ function Testimonials() {
 function VideoTestimonials() {
   const [active, setActive] = useState<number | null>(null);
 
+  // Tutup modal dengan tombol Esc + kunci scroll halaman saat video terbuka
+  useEffect(() => {
+    if (active === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setActive(null);
+    };
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [active]);
+
   return (
     <section className="relative bg-navy-gradient overflow-hidden">
       <div className="absolute inset-0 dot-grid" aria-hidden="true" />
@@ -254,7 +268,7 @@ function VideoTestimonials() {
 export default function Portfolio() {
   useMeta(
     "Portofolio & Testimoni — CoolMaster™ | Bukti Nyata Kualitas Layanan",
-    "Lihat galeri proyek, studi kasus terukur, dan ulasan bintang 5 dari 2.500+ pelanggan CoolMaster™ di seluruh Jabodetabek."
+    "Lihat galeri proyek, studi kasus terukur, dan ulasan bintang 5 dari pelanggan CoolMaster™ di seluruh Jabodetabek."
   );
   return (
     <>

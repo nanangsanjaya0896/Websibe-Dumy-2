@@ -7,7 +7,7 @@ import {
 import PageHero from "../components/PageHero";
 import { BtnOutline, Reveal, SectionTitle, Swoosh } from "../components/ui";
 import { FacebookIcon, InstagramIcon, TikTokIcon, YoutubeIcon } from "../components/SocialIcons";
-import { ADDRESS, EMAIL, FAQS, HOURS, IMG, PHONE_DISPLAY, PHONE_MOBILE, waLink } from "../data/site";
+import { ADDRESS, EMAIL, FAQS, HOURS, IMG, PHONE_DISPLAY, PHONE_MOBILE, SOCIAL_LINKS, waLink } from "../data/site";
 import { useMeta } from "../hooks";
 
 const TEL_LINK = `tel:+62${PHONE_MOBILE.replace(/\D/g, "").slice(1)}`;
@@ -44,10 +44,10 @@ function InfoColumn() {
   ];
 
   const socials = [
-    { icon: InstagramIcon, label: "Instagram" },
-    { icon: FacebookIcon, label: "Facebook" },
-    { icon: YoutubeIcon, label: "YouTube" },
-    { icon: TikTokIcon, label: "TikTok" },
+    { icon: InstagramIcon, label: "Instagram", href: SOCIAL_LINKS.instagram },
+    { icon: FacebookIcon, label: "Facebook", href: SOCIAL_LINKS.facebook },
+    { icon: YoutubeIcon, label: "YouTube", href: SOCIAL_LINKS.youtube },
+    { icon: TikTokIcon, label: "TikTok", href: SOCIAL_LINKS.tiktok },
   ];
 
   return (
@@ -93,7 +93,7 @@ function InfoColumn() {
           <p className="text-sm font-semibold text-navy mb-3">Ikuti Kami</p>
           <div className="flex gap-3">
             {socials.map((s) => (
-              <a key={s.label} href="#" aria-label={s.label} className="grid place-items-center w-10 h-10 rounded-full bg-mist text-navy/60 hover:bg-navy hover:text-white hover:-translate-y-1 transition-all duration-300">
+              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" aria-label={s.label} className="grid place-items-center w-10 h-10 rounded-full bg-mist text-navy/60 hover:bg-navy hover:text-white hover:-translate-y-1 transition-all duration-300">
                 <s.icon size={16} />
               </a>
             ))}
@@ -284,7 +284,7 @@ function ContactForm() {
 
       <button type="submit" className="btn mt-7 w-full inline-flex items-center justify-center gap-2.5 rounded-full bg-coral-gradient text-white font-display font-semibold px-8 py-4.5 text-lg shadow-glow-coral hover:brightness-110 hover:-translate-y-0.5">
         <Send size={19} />
-        Kirim Pesan &amp; Dapatkan Konsultasi Gratis
+        Siapkan Pesan &amp; Dapatkan Konsultasi Gratis
       </button>
       <p className="mt-4 text-center text-xs text-slate-400">Data Anda aman &amp; hanya digunakan untuk keperluan layanan.</p>
     </form>
@@ -427,12 +427,12 @@ function FinalCTA() {
 /* --------------------------------- Page --------------------------------- */
 export default function Contact() {
   useMeta(
-    "Hubungi Kami — CoolMaster™ | Konsultasi Gratis 24/7",
+    "Hubungi Kami — CoolMaster™ | Konsultasi Gratis & Respon Cepat",
     "Hubungi CoolMaster™ untuk konsultasi gratis jasa servis AC & HVAC. Melayani Jabodetabek, respon cepat via WhatsApp, telepon & email."
   );
   return (
     <>
-      <PageHero title="Hubungi Kami" subtitle="Kami siap membantu Anda 24/7. Konsultasi gratis tanpa komitmen." crumb="Kontak" />
+      <PageHero title="Hubungi Kami" subtitle="Kami siap membantu Anda setiap hari. Konsultasi gratis tanpa komitmen." crumb="Kontak" />
       <section className="relative bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <div className="grid lg:grid-cols-[0.95fr_1.05fr] gap-8 lg:gap-12 items-start">

@@ -21,6 +21,14 @@ export const WA_DEFAULT = waLink(
   "Halo CoolMaster, saya ingin konsultasi gratis & memesan teknisi servis AC."
 );
 
+export const SOCIAL_LINKS = {
+  instagram: "https://www.instagram.com/coolmaster.id",
+  facebook: "https://www.facebook.com/coolmaster.id",
+  youtube: "https://www.youtube.com/@coolmasterid",
+  tiktok: "https://www.tiktok.com/@coolmasterid",
+  linkedin: "https://www.linkedin.com/company/coolmaster-indonesia",
+};
+
 export const NAV_LINKS = [
   { label: "Home", path: "/" },
   { label: "Tentang Kami", path: "/about" },
@@ -83,7 +91,7 @@ export const VIDEO_TESTIMONIALS = [
     poster:
       "https://images.pexels.com/videos/28886877/electrical-panel-28886877.jpeg?auto=compress&cs=tinysrgb&w=900",
     title: "Kantor PT. Maju Jaya — BSD",
-    quote: "“15 unit AC selesai dalam 1 hari. Rapi & profesional.”",
+    quote: "“15 unit AC & panel gedung selesai dalam 1 hari. Rapi & profesional.”",
   },
   {
     src: "https://videos.pexels.com/video-files/35206231/14915051_1440_2560_30fps.mp4",
@@ -130,7 +138,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "AC kantor bocor parah langsung beres dalam 1 jam. Teknisi ramah, kerja bersih pakai alas lantai, dan harganya sangat masuk akal!",
     img: FACES.hendra,
-    date: "12 Januari 2026",
+    date: "26 Oktober 2026",
   },
   {
     name: "Ibu Sari Rahmawati",
@@ -139,7 +147,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "Sudah 3 tahun langganan paket maintenance. AC di rumah selalu dingin dan tagihan listrik jauh lebih hemat. Tidak pernah kecewa!",
     img: FACES.sari,
-    date: "28 Desember 2025",
+    date: "14 Oktober 2026",
   },
   {
     name: "PT. Maju Jaya",
@@ -148,7 +156,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "15 unit AC kantor semua diservis dalam 1 hari. Kerja cepat, rapi, dan profesional. Laporan pengerjaan juga dikirim lengkap via email.",
     img: FACES.majuJaya,
-    date: "17 Desember 2025",
+    date: "2 Oktober 2026",
   },
   {
     name: "Ibu Ratna Sari",
@@ -157,7 +165,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "Bau tidak sedap dari AC kamar anak hilang total setelah deep cleaning. Sekarang tidur malam jauh lebih nyenyak. Terima kasih CoolMaster!",
     img: FACES.ratna,
-    date: "5 Desember 2025",
+    date: "20 September 2026",
   },
   {
     name: "Bpk. Andi Prasetyo",
@@ -166,7 +174,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "Pasang 3 unit AC baru di rumah. Teknisi datang tepat waktu, instalasi pipa rapi sekali, dan dikasih panduan perawatan. Sangat recommended.",
     img: FACES.andi,
-    date: "22 November 2025",
+    date: "7 September 2026",
   },
   {
     name: "Ibu Maya Putri",
@@ -175,7 +183,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "Harga di quotation sama persis dengan yang dibayar, tidak ada biaya tambahan tiba-tiba. Ini yang bikin saya jadi pelanggan tetap.",
     img: FACES.maya,
-    date: "9 November 2025",
+    date: "24 Agustus 2026",
   },
   {
     name: "Bpk. Rizal Maulana",
@@ -184,7 +192,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "AC mati total jam 8 malam, teknisi masih bisa datang malam itu juga. Luar biasa responsnya. Besoknya AC sudah dingin normal lagi.",
     img: FACES.rizal,
-    date: "30 Oktober 2025",
+    date: "11 Agustus 2026",
   },
   {
     name: "Ibu Dewi Anggraini",
@@ -193,7 +201,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "Setiap 3 bulan diingatkan jadwal servis via WhatsApp, teknisi selalu sopan dan pakai seragam. Rumah terasa segar terus sepanjang tahun.",
     img: FACES.dewi,
-    date: "18 Oktober 2025",
+    date: "28 Juli 2026",
   },
   {
     name: "Bpk. Joko Santoso",
@@ -202,7 +210,7 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "Pindah rumah dan semua AC dipindahkan dengan aman. Tidak ada yang bocor atau rusak. Garansinya juga benar-benar diproses cepat.",
     img: FACES.joko,
-    date: "2 Oktober 2025",
+    date: "15 Juli 2026",
   },
 ];
 
@@ -320,7 +328,7 @@ export const PROMO_TERMS = [
 export const FAQS = [
   {
     q: "Berapa lama garansi pengerjaan servis AC?",
-    a: "Garansi standar kami adalah 30 hari untuk semua layanan perbaikan & cuci AC. Paket Total Care mendapatkan garansi sepanjang masa kontrak berjalan.",
+    a: "Garansi 30 hari untuk layanan perbaikan & paket Premium, dan 7 hari untuk paket Basic. Paket Total Care mendapatkan garansi sepanjang masa kontrak berjalan.",
   },
   {
     q: "Apakah ada biaya tambahan jika teknisi datang mengecek dulu?",

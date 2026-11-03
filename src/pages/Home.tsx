@@ -71,12 +71,12 @@ function Hero() {
                 {HERO_AVATARS.map((a, i) => (
                   <img key={i} src={a} alt="Foto pelanggan CoolMaster" className="w-11 h-11 rounded-full object-cover ring-[2.5px] ring-navy" loading="lazy" />
                 ))}
-                <span className="grid place-items-center w-11 h-11 rounded-full bg-brand-gradient text-white text-[10px] font-bold ring-[2.5px] ring-navy">2.5K+</span>
+                <span className="grid place-items-center w-11 h-11 rounded-full bg-brand-gradient text-white text-[10px] font-bold ring-[2.5px] ring-navy">15K+</span>
               </div>
               <div className="text-center sm:text-left">
                 <Stars size={17} />
                 <p className="mt-1 text-sm text-white/70">
-                  <span className="text-white font-bold">4.9 / 5.0</span> dari 2.500+ Pelanggan Puas
+                  <span className="text-white font-bold">4.9 / 5.0</span> dari 2.500+ Ulasan Pelanggan
                 </p>
               </div>
             </div>

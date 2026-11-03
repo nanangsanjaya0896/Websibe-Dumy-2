@@ -4,7 +4,7 @@ import PageHero from "../components/PageHero";
 import { BtnOutline, BtnPrimary, Pill, Reveal, SectionTitle } from "../components/ui";
 import { LinkedInIcon } from "../components/SocialIcons";
 import { Mail } from "lucide-react";
-import { IMG, STATS } from "../data/site";
+import { EMAIL, IMG, SOCIAL_LINKS, STATS } from "../data/site";
 import { formatID, useCounter, useMeta } from "../hooks";
 
 /* ---------------------------- Counter stats --------------------------- */
@@ -242,7 +242,7 @@ function VisiMisi() {
 const TEAM = [
   { img: IMG.teamBudi, name: "Budi Santoso", role: "Founder & Chief Engineer", desc: "20+ tahun memimpin standar kualitas teknis CoolMaster™." },
   { img: IMG.teamSari, name: "Sari Dewi", role: "Operations Manager", desc: "Memastikan setiap jadwal kunjungan berjalan tepat waktu." },
-  { img: IMG.teamAhmad, name: "Ahmad Fauzi", role: "Head of Technical Team", desc: "Ahli VRF/VRF & troubleshooting kelas berat semua merek." },
+  { img: IMG.teamAhmad, name: "Ahmad Fauzi", role: "Head of Technical Team", desc: "Ahli VRV/VRF & troubleshooting kelas berat semua merek." },
   { img: IMG.teamRina, name: "Rina Kusuma", role: "Customer Relations Manager", desc: "Suara ramah pertama yang menyambut setiap panggilan Anda." },
 ];
 
@@ -259,10 +259,10 @@ function Team() {
                   <img src={m.img} alt={`Foto ${m.name} — ${m.role}`} className="w-full h-64 object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute bottom-4 left-4 flex gap-2 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                    <a href="#" aria-label={`LinkedIn ${m.name}`} className="grid place-items-center w-9 h-9 rounded-full bg-white/90 text-navy hover:bg-brand hover:text-white transition-colors">
+                    <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noreferrer" aria-label={`LinkedIn ${m.name}`} className="grid place-items-center w-9 h-9 rounded-full bg-white/90 text-navy hover:bg-brand hover:text-white transition-colors">
                       <LinkedInIcon size={15} />
                     </a>
-                    <a href={`mailto:info@coolmaster.co.id`} aria-label={`Email ${m.name}`} className="grid place-items-center w-9 h-9 rounded-full bg-white/90 text-navy hover:bg-coral hover:text-white transition-colors">
+                    <a href={`mailto:${EMAIL}`} aria-label={`Email ${m.name}`} className="grid place-items-center w-9 h-9 rounded-full bg-white/90 text-navy hover:bg-coral hover:text-white transition-colors">
                       <Mail size={15} />
                     </a>
                   </div>

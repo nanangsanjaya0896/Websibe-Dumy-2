@@ -2,7 +2,7 @@ import { ArrowRight, BadgeCheck, CalendarClock, CheckCircle2, ClipboardList, Coi
 import PageHero from "../components/PageHero";
 import { CTABanner } from "../components/sections";
 import { BtnPrimary, Pill, Reveal, SectionTitle } from "../components/ui";
-import { AREAS, IMG } from "../data/site";
+import { AREAS, IMG, waLink } from "../data/site";
 import { useMeta } from "../hooks";
 
 /* ------------------------- Service detail data ------------------------ */
@@ -188,7 +188,7 @@ function ServiceArea() {
           <p className="mt-10 text-center text-white/65 text-sm md:text-base">
             Melayani <span className="text-brand-light font-semibold">residensial, perkantoran, ruko,</span> dan{" "}
             <span className="text-brand-light font-semibold">industrial</span> — di luar area di atas?{" "}
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" className="text-gold font-semibold underline underline-offset-4 hover:text-white transition-colors">
+            <a href={waLink("Halo CoolMaster, saya ingin mengecek ketersediaan teknisi di area saya.")} target="_blank" rel="noreferrer" className="text-gold font-semibold underline underline-offset-4 hover:text-white transition-colors">
               Tanya kami dulu
             </a>
             .

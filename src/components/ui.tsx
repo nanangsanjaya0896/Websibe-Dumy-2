@@ -157,7 +157,7 @@ export function BtnPrimary({
       </a>
     );
   return (
-    <Link to={to ?? "#"} className={cls}>
+    <Link to={to ?? "/"} className={cls}>
       {children}
     </Link>
   );
@@ -190,7 +190,7 @@ export function BtnOutline({
       </a>
     );
   return (
-    <Link to={to ?? "#"} className={cls}>
+    <Link to={to ?? "/"} className={cls}>
       {children}
     </Link>
   );
